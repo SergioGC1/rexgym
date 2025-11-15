@@ -7,8 +7,6 @@
 .section-subtitle {
     font-size: 1.1rem;
     color: #444;
-    /* permitir que el subtítulo utilice todo el ancho disponible
-       para evitar que se rompa en demasiadas líneas */
     max-width: none;
     line-height: 1.6;
 }
