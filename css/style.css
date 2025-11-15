@@ -39,6 +39,7 @@ body {
   font-family: 'Segoe UI', Tahoma, sans-serif;
   background-color: var(--bg);
   color: var(--text);
+  overflow-x: hidden;
 }
 
 main {
@@ -162,10 +163,15 @@ footer {
   padding: 2rem 1.5rem;
 }
 footer nav { padding: 0; }
-footer nav ul { justify-content: center; gap: 1rem; }
+footer nav ul { justify-content: center; gap: 1rem; flex-wrap: wrap; }
 footer a { color: var(--footer-text); text-decoration: none; font-weight: 600; }
 footer a:hover, footer a:focus-visible { color: var(--brand); }
 footer small { display: block; text-align: center; margin-top: 1rem; }
+/* Footer: alinear badges del validador junto al copyright */
+footer { text-align: center; }
+footer small { display: inline-block; margin-top: 1rem; vertical-align: middle; }
+.validator-badges { display: inline-block; vertical-align: middle; margin-left: 0.6rem; }
+.validator-badges img { display: inline-block; width: 72px; height: 25px; opacity: 0.95; }
 
 .btn { background-color: var(--brand); }
 .btn.ghost { color: var(--brand); }
@@ -179,6 +185,11 @@ footer small { display: block; text-align: center; margin-top: 1rem; }
 
 nav a.active {
   color: var(--brand-dark);
+}
+
+iframe,
+video {
+  max-width: 100%;
 }
 
 .user-btn {

@@ -1,4 +1,4 @@
-﻿# Estructura del proyecto (árbol)
+# Estructura del proyecto (árbol)
 
 ```
 / (repositorio raiz)
@@ -53,7 +53,7 @@ Dificultad media (0.30 puntos por ítem):
 ✅ Uso variado de pseudoclases y pseudoelementos (:hover, :first-child, :nth-child(), ::before, ::after).
 ✅ Uso variado de sombras, bordes redondeados y transparencias (box-shadow, border-radius, opacity, rgba()).
 ✅ Inclusión de un mapa de sitio visible o accesible (sitemap HTML o XML).
-❌ Validación correcta de todas las páginas que componen el sitio web según el validador HTML y CSS de la W3C. En el caso de contener errores de validación, estos han de ser mínimos y difícilmente resolubles. Se aceptan advertencias (warnings) en estas validaciones.
+✅ Validación correcta de todas las páginas que componen el sitio web según el validador HTML y CSS de la W3C. En el caso de contener errores de validación, estos han de ser mínimos y difícilmente resolubles. Se aceptan advertencias (warnings) en estas validaciones.
 ✅ Inclusión, según proceda, de páginas de conformidad legal: Aviso legal, Términos y condiciones, Política de privacidad, etc.
 ✅ Inclusión, según proceda, de un aviso de Cookies con la posibilidad de aceptar o rechazar.
 ✅ Integración de un mapa real (embed de Google Maps u OpenStreetMap).
