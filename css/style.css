@@ -114,6 +114,62 @@ nav a.active {
   color: #fff;
 }
 
+.hero {
+  padding: 3.5rem 1.5rem;
+  background: linear-gradient(135deg, #fff4eb, #ffe6d2);
+  border-bottom: 1px solid #f0d5bc;
+}
+
+.hero-label {
+  text-transform: uppercase;
+  font-size: 0.9rem;
+  letter-spacing: 0.2em;
+  color: #a34715;
+  margin-bottom: 0.75rem;
+}
+
+.hero h1 {
+  font-size: clamp(2rem, 5vw, 2.8rem);
+  max-width: 40rem;
+}
+
+.hero-text {
+  max-width: 38rem;
+  margin-bottom: 1.5rem;
+  color: #4a372c;
+}
+
+.hero-actions {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.btn {
+  border-radius: 999px;
+  border: 1px solid #d35619;
+  padding: 0.8rem 1.6rem;
+  text-decoration: none;
+  color: #fff;
+  background-color: #d35619;
+  font-weight: 600;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 10px 20px rgba(211, 86, 25, 0.2);
+}
+
+.btn.ghost {
+  background-color: transparent;
+  color: #d35619;
+}
+
+.btn.ghost:hover {
+  background-color: rgba(211, 86, 25, 0.1);
+}
+
 h1 {
   font-size: 2rem;
   margin-top: 0;
