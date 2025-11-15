@@ -33,19 +33,22 @@
 └─ sitemap.html
 ```
 
-SOBRE EL SITIO WEB (5 puntos máximo)
-Dificultad baja (0.15 puntos por ítem):
-✅ Favicon y metadatos adecuados (<meta charset>, <meta name="description">, <meta name="viewport"> en todas las páginas que componen el sitio web).
-✅ Uso de etiquetas semánticas de layout HTML5 (header, content, main, section, aside, footer) frente a bloques genéricos tipo div.
-✅ Inclusión de al menos una tabla, una lista ordenada y una no ordenada.
-✅ Definición de reglas CSS en uno o varios archivos CSS vinculados.
-✅ Uso del modelo de cajas (margin, padding, border) para maquetar áreas.
-✅ Uso de selectores básicos de etiqueta, clase e id.
-✅ Inclusión de robots.txt y humans.txt.
-✅ Cabecera y pie de página fijos o consistentes en todas las páginas.
-✅ Menú de navegación horizontal o vertical con hover y active en los enlaces.
-✅ Inserción de contenido multimedia (<audio>, <video>, <iframe>, <embed>...).
+SOBRE EL SITIO WEB (5 puntos máximo)<br>
+Dificultad baja (0.15 puntos por ítem):<br>
+
+✅ Favicon y metadatos adecuados (<meta charset>, <meta name="description">, <meta name="viewport"> en todas las páginas que componen el sitio web).<br>
+✅ Uso de etiquetas semánticas de layout HTML5 (header, content, main, section, aside, footer) frente a bloques genéricos tipo div.<br>
+✅ Inclusión de al menos una tabla, una lista ordenada y una no ordenada.<br>
+✅ Definición de reglas CSS en uno o varios archivos CSS vinculados.<br>
+✅ Uso del modelo de cajas (margin, padding, border) para maquetar áreas.<br>
+✅ Uso de selectores básicos de etiqueta, clase e id.<br>
+✅ Inclusión de robots.txt y humans.txt.<br>
+✅ Cabecera y pie de página fijos o consistentes en todas las páginas.<br>
+✅ Menú de navegación horizontal o vertical con hover y active en los enlaces.<br>
+✅ Inserción de contenido multimedia (<audio>, <video>, <iframe>, <embed>...).<br>
+
 Dificultad media (0.30 puntos por ítem):
+
 ✅ Diseño coherente con la guía de estilo (colores, tipografías, tamaños, coherencia visual).
 ✅ Implementación de una paleta cromática coherente según la psicología del color.
 ✅ Aplicación de tipografía y jerarquía visual correctas (lectura, contraste, legibilidad).
@@ -60,6 +63,7 @@ Dificultad media (0.30 puntos por ítem):
 ✅ Diseño responsive completo, adaptable a móvil, tablet y escritorio con media queries.
 
 Dificultad alta (0.50 puntos por ítem):
+
 ✅ Posibilidad de alternancia entre modo oscuro y claro
 ✅ Menú “hamburguesa” o navegación adaptable sin frameworks.
 ✅ Uso variado de animaciones o transiciones CSS (transition, transform, animation).
