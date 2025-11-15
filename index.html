@@ -20,8 +20,8 @@
                 <ul>
                     <li><a href="gimnasios.html">Gimnasios</a></li>
                     <li><a href="cuotas.html">Cuotas y Servicios</a></li>
+                    <li><a href="#contacto">Contacto</a></li>
                     <li><a href="clases.html">Clases</a></li>
-                    <li><a href="instalaciones.html">Instalaciones</a></li>
                 </ul>
             </nav>
             <a class="user-btn" href="#" aria-label="Área de usuario" favicon="user-btn"></a>
@@ -42,8 +42,72 @@
                 </div>
             </div>
         </section>
-        <section>
-            <p> RexGym.</p>
+
+        <section class="container">
+            <h2>Servicios</h2>
+            <div class="services">
+                <article class="service-card">
+                    <h3>Entrenamiento Personal</h3>
+                    <p>Sesiones individuales con entrenadores certificados para maximizar tus resultados.</p>
+                </article>
+                <article class="service-card">
+                    <h3>Clases Colectivas</h3>
+                    <p>Yoga, Boxing, Spinning y más — clases para todos los niveles y objetivos.</p>
+                </article>
+                <article class="service-card">
+                    <h3>Nutrición</h3>
+                    <p>Planes de nutrición personalizados para acompañar tu entrenamiento.</p>
+                </article>
+                <article class="service-card">
+                    <h3>Acceso de 8:00/22:00</h3>
+                    <p>Entrena cuando quieras con acceso de 8:00 a 22:00 en centros seleccionados.</p>
+                </article>
+            </div>
+        </section>
+
+        <section class="container">
+            <h2>Gimnasios destacados</h2>
+            <div class="gyms-grid">
+                <article class="gym-card">
+                    <img src="img/gym1.jpg" alt="Gimnasio central">
+                    <h4>RexGym Central</h4>
+                    <p>Horario: 08:00 - 23:00 · Zona centro</p>
+                </article>
+                <article class="gym-card">
+                    <img src="img/gym2.jpg" alt="RexGym Norte">
+                    <h4>RexGym Norte</h4>
+                    <p>Horario: 08:30 - 22:30 · Abierto festivos</p>
+                </article>
+                <article class="gym-card">
+                    <img src="img/gym3.jpg" alt="RexGym Sur">
+                    <h4>RexGym Sur</h4>
+                    <p>Horario: 08:00 - 22:00 · Amplias salas de clases</p>
+                </article>
+            </div>
+        </section>
+
+        <section class="container">
+            <h2>Testimonios</h2>
+            <div class="testimonial">
+                <p>"Desde que me apunté a RexGym he ganado energía, disciplina y he notado un cambio real en mi cuerpo.
+                    El equipo es de primer nivel."</p>
+                <cite>— Nuria, socia desde 2024</cite>
+            </div>
+        </section>
+
+        <section id="contacto">
+            <div class="contact-container">
+                <h2>Contacto</h2>
+                <p>¿Tienes dudas o quieres más información? Escríbenos.</p>
+
+                <form class="contact-form">
+                    <input type="text" name="nombre" placeholder="Tu nombre" required>
+                    <input type="email" name="email" placeholder="Tu correo" required>
+                    <textarea name="mensaje" placeholder="Escribe tu mensaje" rows="5" required></textarea>
+                    <button type="submit">Enviar mensaje</button>
+                </form>
+
+            </div>
         </section>
     </main>
 

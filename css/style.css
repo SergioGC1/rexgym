@@ -209,3 +209,52 @@ h1 {
 .cookie-banner button:focus {
   outline: 3px solid #ffd6c0;
 }
+
+/* Minimal additions for index sections - light and unobtrusive */
+.container {
+  width: min(100%, 1100px);
+  margin: 0 auto;
+  padding: 1.5rem;
+}
+
+.hero h2 {
+  font-size: clamp(1.25rem, 3.5vw, 1.6rem);
+  margin: 0.25rem 0 0.75rem 0;
+  color: #5b3a2b;
+}
+
+.services {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1rem;
+  margin-top: 1rem;
+}
+.service-card {
+  background: #fff;
+  border: 1px solid #f0d5bc;
+  padding: 1rem;
+  border-radius: 10px;
+}
+.service-card h3 { margin: 0 0 0.5rem 0; color:#a34715 }
+
+.gyms-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 1rem;
+  margin-top: 1rem;
+}
+.gym-card { padding: 0.5rem; border-radius: 8px; border:1px solid #f0d5bc; background: #fffaf6 }
+.gym-card img { width:100%; height:140px; object-fit:cover; border-radius:6px }
+
+.testimonial { margin-top:1rem; padding:0.9rem; background:#fff7f1; border-left:4px solid #d35619; border-radius:6px }
+.testimonial cite { display:block; margin-top:0.6rem; font-weight:700; color:#7a2b0b }
+
+.contact-container { width: min(100%,700px); margin: 1rem auto; }
+form.contact-form { display:flex; flex-direction:column; gap:0.75rem }
+form.contact-form input, form.contact-form textarea { padding:0.6rem; border-radius:8px; border:1px solid #ddd }
+form.contact-form button { background:#d35619; color:#fff; border:none; padding:0.65rem 0.9rem; border-radius:8px }
+
+@media (max-width:600px){
+  .hero { padding: 2rem 1rem }
+  .logo img { height:52px }
+}
