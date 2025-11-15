@@ -1,0 +1,98 @@
+/* PLANES DE PRECIOS */
+.plans {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+.plan {
+    background: #fff;
+    border: 1px solid #e3e3e3;
+    border-radius: 12px;
+    padding: 1.5rem;
+    text-align: center;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.plan:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 14px 26px rgba(0, 0, 0, 0.1);
+}
+
+.plan-title {
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+    color: #d35619;
+    /* Color corporativo */
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.plan-features {
+    list-style: none;
+    padding: 0;
+    margin: 0 0 1.5rem 0;
+    text-align: left;
+}
+
+.plan-features li {
+    margin-bottom: 0.6rem;
+    font-size: 0.95rem;
+    padding-left: 1.5rem;
+    position: relative;
+    color: #444;
+}
+
+/* Checkbox estilo ✔ */
+.plan-features li::before {
+    content: "✔";
+    position: absolute;
+    left: 0;
+    color: #2ecc71;
+    font-weight: bold;
+}
+
+.plan-price {
+    font-size: 1.6rem;
+    font-weight: 700;
+    margin: 1rem 0 0.2rem 0;
+    color: #1f1f1f;
+}
+
+.plan-sub {
+    font-size: 0.9rem;
+    color: #888;
+    margin-bottom: 1.5rem;
+}
+
+.plan-btn {
+    display: inline-block;
+    padding: 0.7rem 1.6rem;
+    background: #d35619;
+    color: white;
+    text-decoration: none;
+    border-radius: 999px;
+    font-weight: 600;
+    transition: background 0.2s, transform 0.2s;
+}
+
+.plan-btn:hover {
+    background: #7a2b0b;
+    transform: translateY(-3px);
+}
+
+/* TARJETA DESTACADA */
+.featured {
+    border: 2px solid #d35619;
+    background: #fff8f2;
+    transform: scale(1.03);
+}
+
+.featured-btn {
+    background: #1f1f1f;
+}
+
+.featured-btn:hover {
+    background: #000;
+}
