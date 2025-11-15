@@ -28,6 +28,7 @@ header {
   justify-content: center;
   align-items: center;
   gap: 1rem;
+  min-height: 60px;
 }
 
 .logo {
@@ -45,6 +46,9 @@ header {
   transform: translateY(-50%);
   z-index: 5;
 }
+
+/* Por defecto ocultar el botón de navegación (se mostrará en la media query) */
+.nav-toggle { display: none; }
 
 .logo img {
   display: block;
@@ -76,16 +80,14 @@ nav a {
   font-weight: 600;
   font-size: 1rem;
   padding: 0.25rem 0.4rem;
-  transition: color 0.2s ease, transform 0.2s ease;
+  transition: color 0.2s ease;
 }
 
 nav a:hover,
 nav a:focus-visible {
   color: #7a2b0b;
-  transform: scale(1.08);
 }
 
-/* Dark mode - minimal, accessible overrides */
 :root {
   --bg: #fffdfb;
   --text: #1f1f1f;
@@ -209,7 +211,6 @@ h1 {
   margin-top: 0;
 }
 
-/* Cookie banner */
 .cookie-banner {
   position: fixed;
   left: 0;
@@ -244,7 +245,6 @@ h1 {
   outline: 3px solid #ffd6c0;
 }
 
-/* Minimal additions for index sections - light and unobtrusive */
 .container {
   width: min(100%, 1100px);
   margin: 0 auto;
@@ -291,4 +291,29 @@ form.contact-form button { background:#d35619; color:#fff; border:none; padding:
 @media (max-width:600px){
   .hero { padding: 2rem 1rem }
   .logo img { height:52px }
+}
+
+@media (max-width:900px){
+  .nav-toggle { display: inline-flex; align-items: center; justify-content: center; border: none; background: transparent; cursor: pointer; position: absolute; left: 96px; right: auto; top: 50%; transform: translateY(-50%); padding: 8px; z-index: 7; }
+  .nav-toggle .hamburger { display: block; width: 22px; height: 2px; background: var(--brand); position: relative; transition: background .15s ease; }
+  .nav-toggle .hamburger::before, .nav-toggle .hamburger::after { content: ''; position: absolute; left: 0; width: 22px; height: 2px; background: var(--brand); transition: transform .18s ease, top .18s ease; }
+  .nav-toggle .hamburger::before { top: -7px; }
+  .nav-toggle .hamburger::after { top: 7px; }
+
+  nav { display: none; position: absolute; left: 0; right: 0; top: 100%; background: var(--bg); border-top: 1px solid color-mix(in srgb, var(--bg) 80%, #f0d5bc); padding: 0.6rem 0; z-index: 6; }
+  nav ul { flex-direction: column; gap: 0; align-items: stretch; }
+  nav li { width: 100%; }
+  nav a { display: block; padding: 0.75rem 1rem; }
+
+  .header-bar.open nav { display: block; }
+
+  .header-bar.open .hamburger { background: transparent; }
+  .header-bar.open .hamburger::before { transform: rotate(45deg) translate(4px,4px); top: 0; }
+  .header-bar.open .hamburger::after { transform: rotate(-45deg) translate(4px,-4px); top: 0; }
+
+  .user-btn { right: 16px; }
+  .logo { left: 12px; z-index: 8; }
+  /* Ajustar altura mínima del header en tamaños móviles para evitar saltos del logo */
+  .header-bar { min-height: 72px; }
+  .logo img { height: 56px; }
 }
