@@ -35,7 +35,7 @@
 
 SOBRE EL SITIO WEB (5 puntos máximo)
 Dificultad baja (0.15 puntos por ítem):
-❌ Favicon y metadatos adecuados (<meta charset>, <meta name="description">, <meta name="viewport"> en todas las páginas que componen el sitio web).
+✅ Favicon y metadatos adecuados (<meta charset>, <meta name="description">, <meta name="viewport"> en todas las páginas que componen el sitio web).
 ✅ Uso de etiquetas semánticas de layout HTML5 (header, content, main, section, aside, footer) frente a bloques genéricos tipo div.
 ✅ Inclusión de al menos una tabla, una lista ordenada y una no ordenada.
 ✅ Definición de reglas CSS en uno o varios archivos CSS vinculados.
