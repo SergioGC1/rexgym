@@ -1,0 +1,111 @@
+.instalaciones-container {
+    width: min(100%, 1100px);
+    margin: 0 auto;
+    padding: 1.5rem;
+}
+
+.section-subtitle {
+    font-size: 1.1rem;
+    color: #444;
+    /* permitir que el subtítulo utilice todo el ancho disponible
+       para evitar que se rompa en demasiadas líneas */
+    max-width: none;
+    line-height: 1.6;
+}
+
+.section-title {
+    margin-top: 3rem;
+    font-size: 1.8rem;
+    font-weight: 700;
+}
+
+.gallery {
+    margin-top: 1.5rem;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 1rem;
+}
+
+.gallery img {
+    width: 100%;
+    border-radius: 12px;
+    object-fit: cover;
+}
+
+.extra-zones {
+    margin-top: 3rem;
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+}
+
+.zone-row {
+    display: flex;
+    gap: 2rem;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.zone-row.reverse {
+    flex-direction: row-reverse;
+}
+
+.zone-img {
+    /* Fijar tamaño en el layout flex: evita que la imagen crezca al 100%
+       y permite que el texto ocupe todo el espacio restante. */
+    width: auto;
+    flex: 0 0 380px; /* base fijo de 380px */
+    max-width: 380px;
+    height: 220px; /* altura consistente para mejor alineación visual */
+    border-radius: 14px;
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.12);
+    object-fit: cover;
+}
+
+.zone-content {
+    flex: 1;
+    min-width: 260px;
+}
+
+.zone-content h3 {
+    font-size: 1.4rem;
+    margin-bottom: 0.4rem;
+    color: #d35619;
+}
+
+.zone-content p {
+    color: #555;
+    line-height: 1.6;
+}
+
+.video-box video {
+    width: 100%;
+    max-width: 700px;
+    border-radius: 12px;
+    margin-top: 1.5rem;
+}
+
+.youtube-box iframe {
+    width: 100%;
+    max-width: 700px;
+    height: 390px;
+    border-radius: 12px;
+    margin-top: 2rem;
+}
+
+@media (max-width: 900px) {
+
+    .zone-row,
+    .zone-row.reverse {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .zone-img {
+        max-width: 100%;
+    }
+
+    .zone-content {
+        text-align: center;
+    }
+}
