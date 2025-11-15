@@ -5,6 +5,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>RexGym | Cuotas y Servicios</title>
+    <meta name="description" content="Consulta las cuotas y servicios de RexGym: planes ONE, FLEX y PRIME, complementos y cómo apuntarte paso a paso.">
   <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="css/cuotas.css">
   <link rel="stylesheet" href="css/faqs.css">
@@ -161,14 +162,24 @@
         <details class="faq-item">
           <summary>¿Cómo puedo darme de alta?</summary>
           <div class="faq-panel">
-            <p>Puedes darte de alta online o en cualquiera de nuestros clubes.</p>
+          <ol class="join-steps">
+            <li>Elige tu cuota y complementos.</li>
+            <li>Regístrate online o en el club.</li>
+            <li>Proporciona tu documento de identidad y método de pago.</li>
+            <li>Recibe tu tarjeta de socio y accede al club.</li>
+            <li>Descarga la app para gestionar reservas y entrenamientos.</li>
+          </ol>
           </div>
         </details>
 
         <details class="faq-item">
           <summary>Formas de pago</summary>
           <div class="faq-panel">
-            <p>Aceptamos tarjeta de crédito/débito y domiciliación bancaria.</p>
+            <ol class="join-steps">
+            <li>Paypal</li>
+            <li>Tarjeta de crédito/débito</li>
+            <li>Domiciliación bancaria</li>
+          </ol>
           </div>
         </details>
 
@@ -198,10 +209,11 @@
   <footer>
     <nav>
       <ul>
-        <li><a href="legal.html">Aviso legal</a></li>
-        <li><a href="privacidad.html">Política de privacidad</a></li>
-        <li><a href="cookies.html">Cookies</a></li>
-        <li><a href="index.html#contacto">Contacto</a></li>
+          <li><a href="legal.html">Aviso legal</a></li>
+          <li><a href="privacidad.html">Política de privacidad</a></li>
+          <li><a href="cookies.html">Cookies</a></li>
+          <li><a href="sitemap.html">Mapa del sitio</a></li>
+          <li><a href="index.html#contacto">Contacto</a></li>
       </ul>
     </nav>
     <small>© 2025 RexGym</small>
@@ -209,10 +221,13 @@
 
 </body>
 
-  <div id="cookie-banner" class="cookie-banner" style="display:none;">
-    <p>Usamos solo cookies técnicas necesarias para que la web funcione. <a href="cookies.html">Saber más</a>.</p>
-    <button id="cookie-accept">Aceptar</button>
-  </div>
+    <div id="cookie-banner" class="cookie-banner" style="display:none;">
+      <p>Usamos solo cookies técnicas necesarias para que la web funcione. <a href="cookies.html">Saber más</a>.</p>
+      <div class="cookie-actions">
+        <button id="cookie-accept">Aceptar</button>
+        <button id="cookie-reject" class="ghost">Rechazar</button>
+      </div>
+    </div>
   <script src="js/nav.js"></script>
   <script src="js/darkmode.js"></script>
   <script src="js/cookies.js"></script>

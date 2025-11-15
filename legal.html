@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Aviso Legal | RexGym</title>
+        <meta name="description" content="Aviso legal de RexGym: titularidad, condiciones de uso y propiedad intelectual del sitio.">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/legal.css">
 </head>
@@ -14,6 +15,9 @@
     <header>
         <div class="header-bar">
             <a class="logo" href="index.html"><img src="img/logo.png" alt="Logo RexGym"></a>
+            <button class="nav-toggle" aria-label="Abrir menú" aria-expanded="false">
+                <span class="hamburger" aria-hidden="true"></span>
+            </button>
             <nav>
                 <ul>
                     <li><a href="gimnasios.html">Gimnasios</a></li>
@@ -22,6 +26,7 @@
                     <li><a href="instalaciones.html">Instalaciones</a></li>
                 </ul>
             </nav>
+            <a class="user-btn" role="button" aria-pressed="false" style="cursor:pointer;"></a>
         </div>
     </header>
 
@@ -80,8 +85,12 @@
 
     <div id="cookie-banner" class="cookie-banner" style="display:none;">
         <p>Usamos solo cookies técnicas necesarias para que la web funcione. <a href="cookies.html">Saber más</a>.</p>
-        <button id="cookie-accept">Aceptar</button>
+        <div class="cookie-actions">
+            <button id="cookie-accept">Aceptar</button>
+            <button id="cookie-reject" class="ghost">Rechazar</button>
+        </div>
     </div>
+    <script src="js/nav.js"></script>
     <script src="js/darkmode.js"></script>
     <script src="js/cookies.js"></script>
 

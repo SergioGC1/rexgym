@@ -232,6 +232,7 @@ h1 {
   color: #ffd6c0;
   text-decoration: underline;
 }
+.cookie-banner .cookie-actions { display: flex; gap: 0.6rem; align-items: center; }
 .cookie-banner button {
   background: #d35619;
   color: #fff;
@@ -241,8 +242,11 @@ h1 {
   font-weight: 700;
   cursor: pointer;
 }
-.cookie-banner button:focus {
-  outline: 3px solid #ffd6c0;
+.cookie-banner button:focus { outline: 3px solid #ffd6c0; }
+.cookie-banner button.ghost {
+  background: transparent;
+  color: #fff;
+  border: 1px solid rgba(255,255,255,0.15);
 }
 
 .container {
