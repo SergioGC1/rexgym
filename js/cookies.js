@@ -34,7 +34,7 @@ document.addEventListener('DOMContentLoaded', function () {
         if (btnReject) {
             btnReject.addEventListener('click', function () {
                 // No guardar consentimiento; solo ocultar el banner.
-                // Si hubiera cookies de terceros, aquí deberíamos eliminarlas.
+                // Si existieran cookies de terceros, deberiamos eliminarlas aqui.
                 hideBanner();
             });
         }

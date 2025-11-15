@@ -1,7 +1,4 @@
 document.addEventListener('DOMContentLoaded', function () {
-    var root = document.documentElement;
-    var btn = document.querySelector('.user-btn');
-
     var raiz = document.documentElement;
     var boton = document.querySelector('.user-btn');
 
@@ -22,7 +19,10 @@ document.addEventListener('DOMContentLoaded', function () {
         if (!boton) return;
         var oscuro = raiz.classList.contains('dark');
         boton.setAttribute('aria-pressed', oscuro ? 'true' : 'false');
-        boton.textContent = oscuro ? '☀️' : '🌙';
+        boton.setAttribute('aria-label', oscuro ? 'Cambiar a modo claro' : 'Cambiar a modo oscuro');
+        boton.innerHTML = oscuro
+            ? '<i class="fa-solid fa-sun" aria-hidden="true"></i>'
+            : '<i class="fa-solid fa-moon" aria-hidden="true"></i>';
     }
 
     actualizarBoton();
@@ -41,5 +41,4 @@ document.addEventListener('DOMContentLoaded', function () {
             }, 400);
         });
     }
-
 });

@@ -49,12 +49,10 @@
 }
 
 .zone-img {
-    /* Fijar tamaño en el layout flex: evita que la imagen crezca al 100%
-       y permite que el texto ocupe todo el espacio restante. */
     width: auto;
     flex: 0 0 380px; /* base fijo de 380px */
     max-width: 380px;
-    height: 220px; /* altura consistente para mejor alineación visual */
+    height: 220px;
     border-radius: 14px;
     box-shadow: 0 12px 24px rgba(0, 0, 0, 0.12);
     object-fit: cover;
