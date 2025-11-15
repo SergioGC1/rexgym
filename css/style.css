@@ -1,8 +1,8 @@
 ﻿body {
   margin: 0;
   font-family: 'Segoe UI', Tahoma, sans-serif;
-  background-color: #fffdfb;
-  color: #1f1f1f;
+  background-color: var(--bg);
+  color: var(--text);
 }
 
 main,
@@ -84,6 +84,40 @@ nav a:focus-visible {
   color: #7a2b0b;
   transform: scale(1.08);
 }
+
+/* Dark mode - minimal, accessible overrides */
+:root {
+  --bg: #fffdfb;
+  --text: #1f1f1f;
+  --muted: #555;
+  --brand: #d35619;
+  --brand-dark: #7a2b0b;
+}
+
+.dark {
+  --bg: #0f1112;
+  --text: #e6e6e6;
+  --muted: #cfcfcf;
+  --brand: #ffb58a;
+  --brand-dark: #ffd6c0;
+}
+
+body { background-color: var(--bg); color: var(--text); transition: background-color .2s ease, color .2s ease; }
+
+header { background-color: color-mix(in srgb, var(--bg) 85%, #fff7f1); }
+
+nav a { color: var(--brand); }
+nav a:hover, nav a:focus-visible { color: var(--brand-dark); }
+
+.btn { background-color: var(--brand); }
+.btn.ghost { color: var(--brand); }
+
+.service-card, .gym-card, .plan, .contact-container, .testimonial { background: color-mix(in srgb, var(--bg) 98%, #fff); border-color: color-mix(in srgb, var(--bg) 80%, #f0d5bc); }
+
+.cookie-banner { background: rgba(10,10,10,0.9); }
+
+.user-btn { background: transparent; color: var(--brand); }
+.user-btn[aria-pressed="true"] { background: var(--brand); color: #fff; }
 
 nav a.active {
   color: #7a2b0b;
