@@ -6,6 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>RexGym | Gimnasios</title>
   <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/gimnasios.css">
 </head>
 
 <body>
@@ -25,13 +26,66 @@
       <a class="user-btn" href="#" aria-label="Área de usuario">👤</a>
     </div>
   </header>
+
   <main>
-    <h1>Gimnasios RexGym</h1>
-    <p>Aqui ira un mapa con los gimnasios.</p>
+    <div class="gimnasios-container">
+
+      <h1>Encuentra tu RexGym</h1>
+      <p>Localiza tu gimnasio más cercano y empieza a entrenar hoy mismo.</p>
+
+      <div class="map-container">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d98647.15899136823!2d-0.4439112831924588!3d39.40775618674616!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd604f4cf0efb06f%3A0xb4a351011f7f1d39!2sValencia!5e0!3m2!1ses!2ses!4v1763217647994!5m2!1ses!2ses" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      </div>
+
+      <section class="gym-list">
+
+        <article class="gym-card">
+          <img src="img/gymCentro.jpg" class="gym-img" alt="Gimnasio RexGym Valencia Centro">
+          <div class="gym-info">
+            <h3>RexGym Valencia Centro</h3>
+            <address>Calle Colón 42, Valencia</address>
+            <p class="gym-hours">L-D: 6:00 - 23:00</p>
+            <a href="#" class="gym-btn">Ver detalles</a>
+          </div>
+        </article>
+
+        <article class="gym-card">
+          <img src="img/gymRuzafa.jpg" class="gym-img" alt="Gimnasio RexGym Ruzafa">
+          <div class="gym-info">
+            <h3>RexGym Ruzafa</h3>
+            <address>Avenida Reino de Valencia 12</address>
+            <p class="gym-hours">L-D: 6:00 - 23:00</p>
+            <a href="#" class="gym-btn">Ver detalles</a>
+          </div>
+        </article>
+
+        <article class="gym-card">
+          <img src="img/gymCampanar.jpg" class="gym-img" alt="Gimnasio RexGym Campanar">
+          <div class="gym-info">
+            <h3>RexGym Campanar</h3>
+            <address>Carrer del Poeta, 8</address>
+            <p class="gym-hours">L-D: 6:00 - 23:00</p>
+            <a href="#" class="gym-btn">Ver detalles</a>
+          </div>
+        </article>
+
+      </section>
+
+    </div>
   </main>
+
   <footer>
+    <nav>
+      <ul>
+        <li><a href="legal.html">Aviso legal</a></li>
+        <li><a href="privacidad.html">Política de privacidad</a></li>
+        <li><a href="cookies.html">Cookies</a></li>
+        <li><a href="sitemap.html">Mapa del sitio</a></li>
+      </ul>
+    </nav>
     <small>© 2025 RexGym</small>
   </footer>
+
 </body>
 
 </html>
