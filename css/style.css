@@ -12,8 +12,8 @@ footer {
 
 header {
   position: relative;
-  background-color: #fff7f1;
-  border-bottom: 1px solid #f0d5bc;
+  background-color: var(--header-bg);
+  border-bottom: 1px solid var(--surface-border);
   padding: 0.9rem 0;
   box-sizing: border-box;
 }
@@ -94,6 +94,9 @@ nav a:focus-visible {
   --muted: #555;
   --brand: #d35619;
   --brand-dark: #7a2b0b;
+  --header-bg: #fff7f1;
+  --surface: #fffaf5;
+  --surface-border: #f0d5bc;
 }
 
 .dark {
@@ -102,11 +105,12 @@ nav a:focus-visible {
   --muted: #cfcfcf;
   --brand: #ffb58a;
   --brand-dark: #ffd6c0;
+  --header-bg: #181a1c;
+  --surface: #1e2124;
+  --surface-border: #2c3339;
 }
 
 body { background-color: var(--bg); color: var(--text); transition: background-color .2s ease, color .2s ease; }
-
-header { background-color: color-mix(in srgb, var(--bg) 85%, #fff7f1); }
 
 nav a { color: var(--brand); }
 nav a:hover, nav a:focus-visible { color: var(--brand-dark); }
@@ -114,7 +118,7 @@ nav a:hover, nav a:focus-visible { color: var(--brand-dark); }
 .btn { background-color: var(--brand); }
 .btn.ghost { color: var(--brand); }
 
-.service-card, .gym-card, .plan, .contact-container, .testimonial { background: color-mix(in srgb, var(--bg) 98%, #fff); border-color: color-mix(in srgb, var(--bg) 80%, #f0d5bc); }
+.service-card, .gym-card, .plan, .contact-container, .testimonial { background: var(--surface); border-color: var(--surface-border); }
 
 .cookie-banner { background: rgba(10,10,10,0.9); }
 
@@ -268,8 +272,8 @@ h1 {
   margin-top: 1rem;
 }
 .service-card {
-  background: #fff;
-  border: 1px solid #f0d5bc;
+  background: var(--surface);
+  border: 1px solid var(--surface-border);
   padding: 1rem;
   border-radius: 10px;
 }
@@ -281,10 +285,10 @@ h1 {
   gap: 1rem;
   margin-top: 1rem;
 }
-.gym-card { padding: 0.5rem; border-radius: 8px; border:1px solid #f0d5bc; background: #fffaf6 }
+.gym-card { padding: 0.5rem; border-radius: 8px; border:1px solid var(--surface-border); background: var(--surface) }
 .gym-card img { width:100%; height:140px; object-fit:cover; border-radius:6px }
 
-.testimonial { margin-top:1rem; padding:0.9rem; background:#fff7f1; border-left:4px solid #d35619; border-radius:6px }
+.testimonial { margin-top:1rem; padding:0.9rem; background:var(--surface); border-left:4px solid #d35619; border-radius:6px }
 .testimonial cite { display:block; margin-top:0.6rem; font-weight:700; color:#7a2b0b }
 
 .contact-container { width: min(100%,700px); margin: 1rem auto; }
@@ -304,7 +308,7 @@ form.contact-form button { background:#d35619; color:#fff; border:none; padding:
   .nav-toggle .hamburger::before { top: -7px; }
   .nav-toggle .hamburger::after { top: 7px; }
 
-  nav { display: none; position: absolute; left: 0; right: 0; top: 100%; background: var(--bg); border-top: 1px solid color-mix(in srgb, var(--bg) 80%, #f0d5bc); padding: 0.6rem 0; z-index: 6; }
+  nav { display: none; position: absolute; left: 0; right: 0; top: 100%; background: var(--bg); border-top: 1px solid var(--surface-border); padding: 0.6rem 0; z-index: 6; }
   nav ul { flex-direction: column; gap: 0; align-items: stretch; }
   nav li { width: 100%; }
   nav a { display: block; padding: 0.75rem 1rem; }
