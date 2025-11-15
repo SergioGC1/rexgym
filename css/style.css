@@ -1,29 +1,120 @@
 ﻿body {
   margin: 0;
   font-family: 'Segoe UI', Tahoma, sans-serif;
+  background-color: #fffdfb;
+  color: #1f1f1f;
 }
 
-header,
 main,
 footer {
-  padding: 1rem;
+  padding: 1.5rem;
 }
 
 header {
-  background-color: #f7f7f7;
+  position: relative;
+  background-color: #fff7f1;
+  border-bottom: 1px solid #f0d5bc;
+  padding: 0.9rem 0;
+  box-sizing: border-box;
+}
+
+.header-bar {
+  width: min(100%, 1100px);
+  margin: 0 auto;
+  padding: 0 1.5rem;
+  padding-left: calc(1.5rem + 88px);
+  padding-right: calc(1.5rem + 88px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+
+.logo {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.6rem;
+  text-decoration: none;
+  color: inherit;
+  font-weight: 700;
+  letter-spacing: 0.05em;
+  position: absolute;
+  left: 16px;
+  padding: 6px;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 5;
+}
+
+.logo img {
+  display: block;
+  height: 64px;
+  width: auto;
+}
+
+.logo span {
+  font-size: 1.25rem;
+}
+
+nav {
+  padding: 1rem 0;
 }
 
 nav ul {
   list-style: none;
   display: flex;
-  gap: 1.7rem;
+  gap: 1.5rem;
   padding: 0;
   margin: 0;
   justify-content: center;
+  flex-wrap: wrap;
 }
 
 nav a {
   text-decoration: none;
-  color: black;
-  font-size: 1.5rem;
+  color: #d35619;
+  font-weight: 600;
+  font-size: 1rem;
+  padding: 0.25rem 0.4rem;
+  transition: color 0.2s ease, transform 0.2s ease;
+}
+
+nav a:hover,
+nav a:focus-visible {
+  color: #7a2b0b;
+  transform: scale(1.08);
+}
+
+nav a.active {
+  color: #7a2b0b;
+}
+
+.user-btn {
+  border: 1px solid #d35619;
+  background-color: transparent;
+  color: #d35619;
+  border-radius: 10px;
+  padding: 0.4rem 0.6rem;
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  transition: background-color 0.2s ease, color 0.2s ease;
+  position: absolute;
+  right: 16px;
+  padding: 0.45rem 0.8rem;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 5;
+}
+
+.user-btn:hover,
+.user-btn:focus-visible {
+  background-color: #d35619;
+  color: #fff;
+}
+
+h1 {
+  font-size: 2rem;
+  margin-top: 0;
 }
