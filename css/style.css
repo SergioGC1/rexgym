@@ -1,14 +1,48 @@
-@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css');
+/* Design tokens (colores, tipografía y espaciado) */
+:root {
+  --brand: #d35619;
+  --brand-dark: #7a2b0b;
+  --brand-contrast: #ffffff;
+  --brand-rgb: 211,86,25;
+
+  --bg: #fffdfb;
+  --text: #1f1f1f;
+  --muted: #555;
+
+  --header-bg: #fff7f1;
+  --surface: #fffaf5;
+  --surface-border: #f0d5bc;
+
+  --hero-1: #fff4eb;
+  --hero-2: #ffe6d2;
+  --accent-1: #a34715;
+  --accent-2: #4a372c;
+  --accent-3: #5b3a2b;
+
+  --highlight: #ffd6c0;
+
+  --footer-bg: #1c1a18;
+  --footer-text: #f8f4f0;
+
+  /* spacing & typography tokens */
+  --space-xs: 4px;
+  --space-sm: 8px;
+  --space-md: 16px;
+  --fs-base: 16px;
+}
 
 body {
   margin: 0;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
   font-family: 'Segoe UI', Tahoma, sans-serif;
   background-color: var(--bg);
   color: var(--text);
 }
 
-main,
-footer {
+main {
+  flex: 1;
   padding: 1.5rem;
 }
 
@@ -78,7 +112,7 @@ nav ul {
 
 nav a {
   text-decoration: none;
-  color: #d35619;
+  color: var(--brand);
   font-weight: 600;
   font-size: 1rem;
   padding: 0.25rem 0.4rem;
@@ -87,7 +121,7 @@ nav a {
 
 nav a:hover,
 nav a:focus-visible {
-  color: #7a2b0b;
+  color: var(--brand-dark);
 }
 
 :root {
@@ -99,6 +133,8 @@ nav a:focus-visible {
   --header-bg: #fff7f1;
   --surface: #fffaf5;
   --surface-border: #f0d5bc;
+  --footer-bg: #1c1a18;
+  --footer-text: #f8f4f0;
 }
 
 .dark {
@@ -110,12 +146,26 @@ nav a:focus-visible {
   --header-bg: #181a1c;
   --surface: #1e2124;
   --surface-border: #2c3339;
+  --footer-bg: #050607;
+  --footer-text: #f4f4f4;
 }
 
 body { background-color: var(--bg); color: var(--text); transition: background-color .2s ease, color .2s ease; }
 
 nav a { color: var(--brand); }
 nav a:hover, nav a:focus-visible { color: var(--brand-dark); }
+
+footer {
+  background: var(--footer-bg);
+  color: var(--footer-text);
+  margin-top: 2rem;
+  padding: 2rem 1.5rem;
+}
+footer nav { padding: 0; }
+footer nav ul { justify-content: center; gap: 1rem; }
+footer a { color: var(--footer-text); text-decoration: none; font-weight: 600; }
+footer a:hover, footer a:focus-visible { color: var(--brand); }
+footer small { display: block; text-align: center; margin-top: 1rem; }
 
 .btn { background-color: var(--brand); }
 .btn.ghost { color: var(--brand); }
@@ -128,13 +178,13 @@ nav a:hover, nav a:focus-visible { color: var(--brand-dark); }
 .user-btn[aria-pressed="true"] { background: var(--brand); color: #fff; }
 
 nav a.active {
-  color: #7a2b0b;
+  color: var(--brand-dark);
 }
 
 .user-btn {
-  border: 1px solid #d35619;
+  border: 1px solid var(--brand);
   background-color: transparent;
-  color: #d35619;
+  color: var(--brand);
   border-radius: 10px;
   padding: 0.4rem 0.6rem;
   text-decoration: none;
@@ -152,21 +202,27 @@ nav a.active {
 
 .user-btn:hover,
 .user-btn:focus-visible {
-  background-color: #d35619;
-  color: #fff;
+  background-color: var(--brand);
+  color: var(--brand-contrast);
+}
+.theme-icon {
+  width: 18px;
+  height: 18px;
+  fill: currentColor;
+  display: block;
 }
 
 .hero {
   padding: 3.5rem 1.5rem;
-  background: linear-gradient(135deg, #fff4eb, #ffe6d2);
-  border-bottom: 1px solid #f0d5bc;
+  background: linear-gradient(135deg, var(--hero-1), var(--hero-2));
+  border-bottom: 1px solid var(--surface-border);
 }
 
 .hero-label {
   text-transform: uppercase;
   font-size: 0.9rem;
   letter-spacing: 0.2em;
-  color: #a34715;
+  color: var(--accent-1);
   margin-bottom: 0.75rem;
 }
 
@@ -178,7 +234,7 @@ nav a.active {
 .hero-text {
   max-width: 38rem;
   margin-bottom: 1.5rem;
-  color: #4a372c;
+  color: var(--accent-2);
 }
 
 .hero-actions {
@@ -189,27 +245,27 @@ nav a.active {
 
 .btn {
   border-radius: 999px;
-  border: 1px solid #d35619;
+  border: 1px solid var(--brand);
   padding: 0.8rem 1.6rem;
   text-decoration: none;
-  color: #fff;
-  background-color: #d35619;
+  color: var(--brand-contrast);
+  background-color: var(--brand);
   font-weight: 600;
   transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
 
 .btn:hover {
   transform: translateY(-2px);
-  box-shadow: 0 10px 20px rgba(211, 86, 25, 0.2);
+  box-shadow: 0 10px 20px rgba(var(--brand-rgb), 0.18);
 }
 
 .btn.ghost {
   background-color: transparent;
-  color: #d35619;
+  color: var(--brand);
 }
 
 .btn.ghost:hover {
-  background-color: rgba(211, 86, 25, 0.1);
+  background-color: rgba(var(--brand-rgb), 0.08);
 }
 
 h1 {
@@ -235,20 +291,20 @@ h1 {
   padding-right: 1rem;
 }
 .cookie-banner a {
-  color: #ffd6c0;
+  color: var(--highlight);
   text-decoration: underline;
 }
 .cookie-banner .cookie-actions { display: flex; gap: 0.6rem; align-items: center; }
 .cookie-banner button {
-  background: #d35619;
-  color: #fff;
+  background: var(--brand);
+  color: var(--brand-contrast);
   border: none;
   padding: 0.5rem 0.9rem;
   border-radius: 8px;
   font-weight: 700;
   cursor: pointer;
 }
-.cookie-banner button:focus { outline: 3px solid #ffd6c0; }
+.cookie-banner button:focus { outline: 3px solid var(--highlight); }
 .cookie-banner button.ghost {
   background: transparent;
   color: #fff;
@@ -264,7 +320,7 @@ h1 {
 .hero h2 {
   font-size: clamp(1.25rem, 3.5vw, 1.6rem);
   margin: 0.25rem 0 0.75rem 0;
-  color: #5b3a2b;
+  color: var(--accent-3);
 }
 
 .services {
@@ -279,7 +335,7 @@ h1 {
   padding: 1rem;
   border-radius: 10px;
 }
-.service-card h3 { margin: 0 0 0.5rem 0; color:#a34715 }
+.service-card h3 { margin: 0 0 0.5rem 0; color:var(--accent-1) }
 
 .gyms-grid {
   display: grid;
@@ -290,13 +346,13 @@ h1 {
 .gym-card { padding: 0.5rem; border-radius: 8px; border:1px solid var(--surface-border); background: var(--surface) }
 .gym-card img { width:100%; height:140px; object-fit:cover; border-radius:6px }
 
-.testimonial { margin-top:1rem; padding:0.9rem; background:var(--surface); border-left:4px solid #d35619; border-radius:6px }
-.testimonial cite { display:block; margin-top:0.6rem; font-weight:700; color:#7a2b0b }
+.testimonial { margin-top:1rem; padding:0.9rem; background:var(--surface); border-left:4px solid var(--brand); border-radius:6px }
+.testimonial cite { display:block; margin-top:0.6rem; font-weight:700; color:var(--brand-dark) }
 
 .contact-container { width: min(100%,700px); margin: 1rem auto; }
 form.contact-form { display:flex; flex-direction:column; gap:0.75rem }
 form.contact-form input, form.contact-form textarea { padding:0.6rem; border-radius:8px; border:1px solid #ddd }
-form.contact-form button { background:#d35619; color:#fff; border:none; padding:0.65rem 0.9rem; border-radius:8px }
+form.contact-form button { background:var(--brand); color:var(--brand-contrast); border:none; padding:0.65rem 0.9rem; border-radius:8px }
 
 @media (max-width:600px){
   .hero { padding: 2rem 1rem }

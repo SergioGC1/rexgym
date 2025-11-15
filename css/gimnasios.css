@@ -50,7 +50,7 @@
 .gym-info h3 {
   margin-bottom: .3rem;
   font-size: 1.3rem;
-  color: #d35619;
+  color: var(--brand);
 }
 
 .gym-info address {
@@ -68,8 +68,8 @@
 
 .gym-btn {
   display: inline-block;
-  background: #d35619;
-  color: #fff;
+  background: var(--brand);
+  color: var(--brand-contrast);
   padding: .6rem 1rem;
   border-radius: 999px;
   text-decoration: none;
@@ -78,7 +78,7 @@
 }
 
 .gym-btn:hover {
-  background: #7a2b0b;
+  background: var(--brand-dark);
 }
 
 @media (max-width: 800px) {

@@ -38,7 +38,7 @@ main h1 {
 
 .plan-title {
     text-transform: uppercase;
-    color: #d35619;
+    color: var(--brand);
     font-size: 1.1rem;
     margin-bottom: 0.3rem;
 }
@@ -80,8 +80,8 @@ main h1 {
 }
 
 .plan-btn {
-    background: #d35619;
-    color: white;
+    background: var(--brand);
+    color: var(--brand-contrast);
     text-decoration: none;
     font-weight: 600;
     padding: 0.7rem 1.6rem;
@@ -91,12 +91,12 @@ main h1 {
 }
 
 .plan-btn:hover {
-    background: #7a2b0b;
+    background: var(--brand-dark);
 }
 
 .featured {
-    border: 2px solid #d35619;
-    background: #fff7ef;
+    border: 2px solid var(--brand);
+    background: var(--header-bg);
     transform: scale(1.03);
 }
 
@@ -159,12 +159,12 @@ main h1 {
 .extra-content h3 {
     font-size: 1.4rem;
     margin-bottom: 0.2rem;
-    color: #d35619;
+    color: var(--brand);
 }
 
 .extra-subtitle {
     font-style: italic;
-    color: #7a2b0b;
+    color: var(--brand-dark);
     margin-bottom: 1rem;
 }
 
@@ -172,8 +172,8 @@ main h1 {
     display: inline-block;
     margin-top: 1rem;
     padding: 0.6rem 1.2rem;
-    background-color: #d35619;
-    color: white;
+    background-color: var(--brand);
+    color: var(--brand-contrast);
     border-radius: 999px;
     font-weight: 600;
     text-decoration: none;
@@ -181,7 +181,7 @@ main h1 {
 }
 
 .extra-btn:hover {
-    background: #7a2b0b;
+    background: var(--brand-dark);
     transform: translateY(-3px);
 }
 
@@ -202,6 +202,6 @@ main h1 {
 
 
 .faq-link {
-    color: #d35619;
+    color: var(--brand);
     font-weight: bold;
 }

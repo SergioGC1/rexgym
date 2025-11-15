@@ -3,8 +3,8 @@
     bottom: 0;
     left: 0;
     right: 0;
-    background: #1f1f1f;
-    color: white;
+    background: rgba(31,31,31,0.95);
+    color: var(--brand-contrast);
     padding: 1rem 1.5rem;
     display: none;
     justify-content: space-between;
@@ -13,8 +13,8 @@
 }
 
 .cookie-banner button {
-    background: #d35619;
-    color: white;
+    background: var(--brand);
+    color: var(--brand-contrast);
     border: none;
     padding: 0.6rem 1.2rem;
     border-radius: 8px;

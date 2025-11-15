@@ -46,8 +46,8 @@ details.faq-item .faq-panel {
 }
 
 .cta-btn {
-    border: 2px solid #d35619;
-    color: #d35619;
+    border: 2px solid var(--brand);
+    color: var(--brand);
     background: transparent;
     padding: 0.75rem 1.25rem;
     border-radius: 8px;
