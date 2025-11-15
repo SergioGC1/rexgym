@@ -317,3 +317,9 @@ form.contact-form button { background:#d35619; color:#fff; border:none; padding:
   .header-bar { min-height: 72px; }
   .logo img { height: 56px; }
 }
+
+/* Transición suave al cambiar tema (añadir clase `.theme-transition` al root temporalmente) */
+:root.theme-transition *,
+:root.theme-transition {
+  transition: background-color .35s ease, color .35s ease, border-color .35s ease, box-shadow .35s ease, fill .35s ease;
+}

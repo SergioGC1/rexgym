@@ -36,9 +36,20 @@ document.addEventListener('DOMContentLoaded', function () {
     // Si el botón existe, togglear la clase y guardar la preferencia
     if (boton) {
         boton.addEventListener('click', function () {
+            // Añadir clase temporal para forzar una transición de colores suave
+            raiz.classList.add('theme-transition');
+            // Forzar reflow para que el navegador registre la clase antes del toggle
+            // eslint-disable-next-line no-unused-expressions
+            void raiz.offsetWidth;
+
             var ahoraOscuro = raiz.classList.toggle('dark');
             establecerOscuroAlmacenado(ahoraOscuro ? '1' : '0');
             actualizarBoton();
+
+            // Quitar la clase de transición tras 400ms
+            window.setTimeout(function () {
+                raiz.classList.remove('theme-transition');
+            }, 400);
         });
     }
 
